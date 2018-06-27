@@ -1,0 +1,12 @@
+if(df.loc[row].index<2000):
+		for ap,value in row.items() :
+			loc = int(list(row['labels'])[3])
+			if(np.isnan(value)==False):
+				row[ap]=row[ap]-df1.iloc[loc-1][ap]
+
+		# print(yes)
+	else:
+		for ap,value in row.items :
+			loc = int(list(row['labels'])[3])
+			if(np.isnan(value)==False):
+				row[ap]=row[ap]-df2.iloc[loc-1][ap]
